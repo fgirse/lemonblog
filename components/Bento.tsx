@@ -4,7 +4,7 @@ import Astra from "@/public/Assets/Img/astraglaswbg.png";
 import HeroImage from "@/public/Assets/Img/Hero.png";
 import LogoAlt from "@/public/Assets/Img/LogoAlt.png";
 import Wine from "@/public/Assets/Img/bottles03.png";
-import Cocktail from "@/public/Assets/svg/Cocktailglas.svg";
+import Cocktail from "@/public/Assets/Svg/Cocktailglas.svg";
 import Fussball from "@/public/Assets/Svg/Fussball.svg";
 import Crowdparty from "@/public/Assets/Img/Crowdparty.png";
 import HansAlbers from "@/public/Assets/Img/albers.jpg";
