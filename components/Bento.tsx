@@ -5,7 +5,7 @@ import HeroImage from "@/public/Assets/Img/Hero.png";
 import LogoAlt from "@/public/Assets/Img/LogoAlt.png";
 import Wine from "@/public/Assets/Img/bottles03.png";
 import Cocktail from "@/public/Assets/Svg/Cocktailglas.svg";
-import Fussball from "@/public/Assets/Svg/Fussball.svg";
+import Football from "@/public/Assets/Svg/Fussball.svg";
 import Crowdparty from "@/public/Assets/Img/Crowdparty.png";
 import HansAlbers from "@/public/Assets/Img/albers.jpg";
 
@@ -59,7 +59,7 @@ md:gap-2 m-4">
       </div>
       <div className="col-start-1 row-start-8 row-span-2   md:col-start-1 md:row-start-5 md:col-span-1 md:row-span-3 bg-stone-800 rounded-md p-10">
          <div className="lg:w-[60vw] lg:h-[60vh] justify-center">
-            <Image src={Cocktail} alt="CocktailIcon" width={200} height={200}/>
+            <Image src={"/AssetsSvg/Cocktail.svg"} alt="CocktailIcon" width={200} height={200}/>
           </div>
 
       </div>
@@ -81,17 +81,15 @@ md:gap-2 m-4">
   
           
 
-      </div>
-      <div className="footballcol-start-1 row-start-12 row-span-1  md:col-start-6 md:row-start-6 md:col-span-1 md:row-span-3 bg-red-900 rounded-md p-10">
-        <div className=" flex flex-col items-center justify-center">
-            <Image src={Fussball} alt="Fussball-Illustration" width={175} height={175} />
-          </div>
-        
-       
-      </div>
+  </div>
+  <div className="football col-start-1 row-start-12 row-span-1  md:col-start-6 md:row-start-6 md:col-span-1 md:row-span-3 bg-red-900 rounded-md p-10">
+    <div className="flex flex-col items-center justify-center">
+        <Image src={"/Assets/Svg/Fussball.svg"} alt="Fussball-Illustration" width={175} height={175} />
+    </div>
+  </div>
       <div className="col-start-1 row-start-13 row-span-1   md:col-start-1 md:row-start-8 md:col-span-2 md:row-span-1 bg-slate-800 rounded-md p-10">
         <div className="flex flex-col items-center justify-center">
-          <Image src={LogoAlt} alt="Logo Alt" width={400} height={200} />
+          <Image src={"/Assets/Img/LogoAlt.png"} alt="Logo Alt" width={400} height={200} />
         </div>
       </div>
       <div className="col-start-1 row-start-14 md:col-start-3 md:row-start-8 md:col-span-3 md:row-span-1 bg-slate-800 rounded-md p-10">

@@ -13,7 +13,7 @@ const Header = () => {
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative text-[#FFF44F] flex items-center justify-between">
         <Link href={'/'} className="inline-flex items-center">
-          <div className="relative top-[3vh] right-72 h-10 w-10 lg:h-36 lg:w-36">
+          <div className="relative top-[3vh] right-72 h-10 w-10 lg:h-32 lg:w-32">
             <Image src="/Assets/Img/LogoNeu.png" alt="Rettungsanker Logo" width={160} height={120} />
           </div>
           <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 hover:text-white transition-all duration-300 uppercase">
@@ -62,7 +62,7 @@ const Header = () => {
                 <Image src={"Assets/Svg/Bulleye.svg"} alt="Bulleye" width={10} height={10} sizes="100vw" className="w-0 h-0 lg:w-12 lg:h-12"/>
             
               <Link
-                href=""
+                href="/about"
                 className="rounded-xl px-1 py-1 font medium w-48 font-bowlby uppercase  tracking-wide text-gray-100 transition-colors duration-300"
               >
                 über uns

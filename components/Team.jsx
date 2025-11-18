@@ -92,7 +92,7 @@ export default function Example() {
                   className="lg:border-5 mx-auto h-40 w-40 rounded-full lg:border-yellow-500 xl:h-56 xl:w-56"
                   src={person.imageUrl}
                   width="200"
-                  height="auto"
+                  height="200"
                   alt=""
                 />
                 <div className="space-y-2">

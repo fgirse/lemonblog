@@ -33,7 +33,6 @@ export default function Header() {
   }, [searchParams]);
   return (
     <Navbar className='flex justify-around items-center gap-x-5 bg-transparent'>
-
                     <form onSubmit={handleSubmit} className="hidden lg:block lg:pl-2">
                 <label htmlFor="topbar-search" className="sr-only">Search</label>
                 <div className="relative mt-1 lg:w-96">

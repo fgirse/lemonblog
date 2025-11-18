@@ -47,35 +47,40 @@ function BlogFiltering({data}) {
                     >
                         <span>All</span>
                     </div>
-                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Technology' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
-                        onClick={() => setSelectedCategory('Technology')}    
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Rettungsanker-Freiburg' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('Rettungsanker-Freiburg')}    
                     >
-                        <span>Technology</span>
+                        <span>Rettungsanker-Freiburg</span>
                     </div>
-                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Food' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
-                        onClick={() => setSelectedCategory('Food')}    
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'SC Freiburg' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('SC Freiburg')}    
                     >
-                        <span>Food</span>
+                        <span>SC Freiburg</span>
                     </div>
-                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'People' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
-                        onClick={() => setSelectedCategory('People')}    
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Bundesliga' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('Bundesliga')}    
                     >
-                        <span>People</span>
+                        <span>Bundesliga</span>
+                    </div>
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Menschen' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('Menschen')}    
+                    >
+                        <span>Menschen</span>
                     </div>
                     <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Lifestyle' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
                         onClick={() => setSelectedCategory('Lifestyle')}    
                     >
                         <span>Lifestyle</span>
                     </div>
-                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Nature' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
-                        onClick={() => setSelectedCategory('Nature')}    
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Natur' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('Natur')}    
                     >
-                        <span>Nature</span>
+                        <span>Natur</span>
                     </div>
-                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Culture' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
-                        onClick={() => setSelectedCategory('Culture')}    
+                    <div className={`py-1.5 px-2.5 md:py-3 md:px-5 ${selectedCategory === 'Kultur' ? 'bg-[#FFF44F] text-black' : 'bg-black text-white'} text-sm md:text-base font-medium md:font-semibold rounded-full hover:shadow-lg transition duration-3000 cursor-pointer`}
+                        onClick={() => setSelectedCategory('Kultur')}    
                     >
-                        <span>Culture</span>
+                        <span>Kultur</span>
                     </div>
                     
                 </div>

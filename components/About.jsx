@@ -51,7 +51,7 @@ const About = () => (
         
         <div className="flex flex-row justify-center items-center gap-x-5">
         <Image
-          src="/portraitmick.png"
+          src="/Assets/Img/portraitmick.png"
           height="80"
           width="60"
           float="left"
