@@ -33,6 +33,7 @@
     "uploadthing": "^5.7.1"
   },
   "devDependencies": {
+    "@types/react": "^19.2.6",
     "autoprefixer": "^10",
     "clsx": "^2.1.1",
     "eslint": "^8",
