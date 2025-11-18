@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden !important;
+  height:100dvh;
+}
+
+.container {
+  max-width: 1900px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  overflow-x: hidden !important;
+}
+
+:root {
+  --font-base: "Architects Daughter", BowlbyOneSC;
+  --font-alt: "Open Sans", BowlbyOneSC;
+
+  --color-golden: #dcca87;
+  --color-black: #0c0c0c;
+  --color-gray: rgb(96, 87, 88);
+  --color-crimson: #f5efdb;
+  --color-grey: #aaaaaa;
+  --color-slate-900: #10172a;
+  --color-darkred: #701a1c;
+  --color-white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Architects Daughter", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* https://stackoverflow.com/questions/61083813/how-to-avoid-internal-autofill-selected-style-to-be-applied */
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition:
+    background-color 600000s 0s,
+    color 600000s 0s;
+}
+
+.football {
+  padding: 1rem;
+}
+
+.hero {
+  padding-top: 5rem;
+}
+
+
+
+
+h2 {
+        padding-inline: 2rem;
+  font-weight: bold;
+}
+
+.headingA {
+  -webkit-text-stroke-width: 2.33px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Bowlby One SC";
+}
+.headingG {
+  -webkit-text-stroke-width: 0.33px;
+  -webkit-text-stroke-color: #ffffff;
+  font-family: "Bowlby One SC";
+}
+
+.headingB {
+  -webkit-text-stroke-width: 1.33px;
+  -webkit-text-stroke-color: #ffcc00;
+  font-family: "Architects Daughter";
+}
+
+.headingC {
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: orange;
+  font-family: "Architects Daughter";
+}
+
+.headingD {
+  -webkit-text-stroke-width: 0.66px;
+  -webkit-text-stroke-color: #595959;
+  font-family: "Architects Daughter";
+  font-weight: 800;
+}
+
+.headingE {
+  -webkit-text-stroke-width: 3.99px;
+  -webkit-text-stroke-color: #595959;
+  font-family: "Bowlby One SC";
+  font-weight: 800;
+}
+
+.headingF {
+  -webkit-text-stroke-width: 3.66px;
+  -webkit-text-stroke-color: #fffffc;
+  font-family: "Bowlby One SC";
+  font-weight: 800;
+}
+
+
+/* Marquee container styles */
+.marquee-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+/* Marquee content styles */
+.marquee-content {
+  display: flex;
+  animation: marquee-scroll 30s linear infinite;
+  /* Set initial position to the right */
+  transform: translateX(100%);
+}
+
+/* Marquee gradient styles */
+.marquee-gradient {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 10px;
+  background: linear-gradient(to left, transparent 0%, white 100%);
+  pointer-events: none;
+}
+
+/* Keyframes for marquee scrolling animation */
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
