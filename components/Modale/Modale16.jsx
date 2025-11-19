@@ -39,7 +39,7 @@ export default function Modale16() {
             >
               <div className="flex flex-col items-center">
                 <Image
-                  src={LogoDFL}
+                  src="/Assets/Img/LogoDFL.png"
                   alt="icon"
                   width={120}
                   height={120}

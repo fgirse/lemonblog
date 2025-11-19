@@ -6,12 +6,12 @@ import { TypingText } from '@/components/CustomTexts';
 import { planetVariants, staggerContainer, fadeIn } from '../utils/motion';
 import Modale16 from '@/components/Modale/Modale16';
 import Marquee from '@/components/ticker';
-import Fussball from '../public/Assets/Svg/LogoLeckerladen.svg';
+import Fussball from '@/public/Assets/Svg/fussball.svg';
 import Image from 'next/image';
 
 
 const SportArena = () => (
-  <section id="section-sportarena" className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween top-20`}>
+  <section id="section-sportarena" className={`${styles.paddings} relative z-10 bg-[url('/Assets/Img/sportarenawc.jpg')] bg-contain bg-no-repeat bg-center flex flex-col justify-beetween top-20`}>
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -24,7 +24,7 @@ const SportArena = () => (
         className="flex-1 flex justify-center flex-col"
       >
         <TypingText title="| Sportarena" />
-        <h1 className='headingA text-yellow-500 text-[2.33rem] lg:text-9xl'>Sportarena</h1> 
+        <h1 className='text-center headingA text-yellow-500 text-[2.33rem] lg:text-9xl'>Sportarena</h1> 
         <div className="mt-12 flex flex-wrap items-center justify-between md:flex md:flex-row gap-6">
           <div >
             

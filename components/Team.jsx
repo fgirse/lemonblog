@@ -7,7 +7,7 @@ const people = [
   {
     name: 'Mick',
     role: 'Captain',
-    imageUrl: '/portraitmick.png',
+    imageUrl: '/Assets/Img/portraitmick.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -15,7 +15,7 @@ const people = [
   {
     name: 'Simon',
     role: 'Obermaat',
-    imageUrl: '/Matrose.png',
+    imageUrl: '/Assets/Img/Matrose.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -23,7 +23,7 @@ const people = [
   {
     name: 'Anne',
     role: 'I. Offizierin',
-    imageUrl: '/Offizier-weiblich.png',
+    imageUrl: '/Assets/Img/Offizier-weiblich.png',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -31,7 +31,7 @@ const people = [
   {
     name: 'Kalim',
     role: 'Maat',
-    imageUrl: '/ancerIcon.svg',
+    imageUrl: '/Assets/Svg/ankerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -39,7 +39,7 @@ const people = [
   {
     name: 'Theo',
     role: 'Smutje',
-    imageUrl: '/ancerIcon.svg',
+    imageUrl: '/Assets/Svg/ankerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
@@ -47,7 +47,7 @@ const people = [
   {
     name: 'James',
     role: 'Funker',
-    imageUrl: '/ancerIcon.svg',
+    imageUrl: '/Assets/Svg/ankerIcon.svg',
     twitterUrl: '#',
     linkedinUrl: '#',
   },
