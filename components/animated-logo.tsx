@@ -1,24 +1,24 @@
-"use client"
+"use client";
 
-import { useEffect, useRef } from "react"
-import { gsap } from "gsap"
-import Image from "next/image"
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import Image from "next/image";
 import Logo from "../public/Assets/Img/LogoNeu.png";
 
 export default function AnimatedLogo() {
-  const logoRef = useRef<HTMLDivElement>(null)
-  const textRef1 = useRef<HTMLHeadingElement>(null)
-  const textRef2 = useRef<HTMLHeadingElement>(null)
+  const logoRef = useRef<HTMLDivElement>(null);
+  const textRef1 = useRef<HTMLHeadingElement>(null);
+  const textRef2 = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
     // Set initial state to invisible
     gsap.set([logoRef.current, textRef1.current, textRef2.current], {
       opacity: 0,
       y: -30,
-    })
+    });
 
     // Create timeline for sequential animations
-    const tl = gsap.timeline()
+    const tl = gsap.timeline();
 
     // Animate logo first
     tl.to(logoRef.current, {
@@ -26,7 +26,7 @@ export default function AnimatedLogo() {
       y: 0,
       duration: 1.2,
       ease: "power2.in",
-    })
+    });
 
     // Then animate first text element
     tl.to(
@@ -38,7 +38,7 @@ export default function AnimatedLogo() {
         ease: "power2.in",
       },
       "-=0.6", // Start 0.6s before previous animation ends
-    )
+    );
 
     // Finally animate second text element
     tl.to(
@@ -50,8 +50,8 @@ export default function AnimatedLogo() {
         ease: "power2.in",
       },
       "-=0.8", // Start 0.8s before previous animation ends for overlap
-    )
-  }, [])
+    );
+  }, []);
 
   return (
     <div className="flex flex-col items-center gap-8">
@@ -72,10 +72,10 @@ export default function AnimatedLogo() {
       </h1>
       <h1
         ref={textRef2}
-        className="relative top-[-9vh] lg:top-[-24vh] headingA text-[10vw] md:text-7xl lg:text-[7vw] text-amber-700 text-center tracking-wide"
+        className="relative top-[-9vh] lg:top-[-35vh] headingA text-[10vw] md:text-7xl lg:text-[7vw] text-amber-700 text-center tracking-wide"
       >
         kiezkneipe
       </h1>
     </div>
-  )
+  );
 }

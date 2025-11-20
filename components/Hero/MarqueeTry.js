@@ -34,7 +34,7 @@ const reviews = [
     img: "https://avatar.vercel.sh/jenny",
   },
 ];
-const ReviewCard = ({img,name,username,body}) => {
+const ReviewCard = ({ img, name, username, body }) => {
   return (
     <figure
       className={cn(
@@ -46,7 +46,13 @@ const ReviewCard = ({img,name,username,body}) => {
       )}
     >
       <div className="flex flex-row items-center gap-2">
-        <Image className="rounded-full" width="32" height="32" alt="" src={img} />
+        <Image
+          className="rounded-full"
+          width="32"
+          height="32"
+          alt=""
+          src={img}
+        />
         <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}

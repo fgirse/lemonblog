@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "@/components/Hero"
+import Hero from "@/components/Hero";
 import About from "@/components/About";
 import BentoGrid from "@/components/Bento";
 import Sportarena from "@/components/Sportarena";

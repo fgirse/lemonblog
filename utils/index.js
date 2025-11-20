@@ -1,6 +1,2 @@
-
-import GridDrink from './GridDrink';
-export{
-    
-    GridDrink
-} 
+import GridDrink from "./GridDrink";
+export { GridDrink };

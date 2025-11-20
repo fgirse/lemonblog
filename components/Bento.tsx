@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import LogoNeu from "@/public/Assets/Img/LogoNeu.png";
 import Astra from "@/public/Assets/Img/astraglaswbg.png";
@@ -11,112 +13,181 @@ import HansAlbers from "@/public/Assets/Img/albers.jpg";
 
 export default function Bento() {
   return (
-
     <>
-    <div className="flex flex-col items-center justify-center relative top-[2vh]">
-    <Image src={HeroImage} alt="Hero Image" width={1900} height={600} className="border-2 border-amber-50 shadow-lg shadow-stone-300 w-2/3 h-auto object-cover"/>
-    </div>
-    <h1 className="relative top-[5vh] text-center text-[3.2rem] lg:text-[6vw] lg: leading-12 headingA text-yellow-600">gastlichkeit ist unsere philosophie</h1>
-<section className="py-12 w-[66vw] flex flex-col items-center justify-center">
-{/* Gridcontainer Start */}
-<div className="p-3 bg-slate-700 grid grid-cols-12 grid-rows-12 gap-4">
-    <div className="bg-slate-800 border col-span-6 row-span-2 rounded-xl">
-        <h1 className="text-center p-5 text-4xl lg:text-7xl headingA text-red-900">unser angebot und unser service</h1>
-
-
-    </div>
-    <div className="bg-slate-800 border col-span-6 row-span-3 col-start-7 rounded-xl">
-      <div className="p-3 h-full w-full flex items-center justify-center">
-     <Image src={LogoNeu} alt="Logo Neu" width={360} height={240}/>
+      <div className="flex flex-col items-center justify-center relative top-[2vh]">
+        <Image
+          src={HeroImage}
+          alt="Hero Image"
+          width={1900}
+          height={600}
+          className="border-2 border-amber-50 shadow-lg shadow-stone-300 w-2/3 h-auto object-cover"
+        />
       </div>
-    </div>
-    <div className="bg-slate-800 border col-span-3 row-span-3 row-start-3 rounded-xl">
-
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src="/Assets/Img/astraglaswbg.png" alt="Flens Astra" width={340} height={240}/>
-      </div>
-    </div>
-    <div className="col-span-3 row-span-3 col-start-4 row-start-3">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-         <div className="flex flex-col items-center justify-center">
-         <h1 className="text-center p-5 text-4xl lg:text-4xl headingA text-yellow-600">bier vom Fass</h1>
-                  <p className="text-white text-center p-5 text-lg lg:text-xl">Flensburger Pilsener - das kühle blonde aus dem Norden und Astra - das Kutbier natürlich direkt vom Kiez</p>                       
-      </div>
-      </div>
-    </div>
-    <div className="col-span-4 row-span-2 col-start-7 row-start-4">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src="/Assets/Img/Bottles03.png" alt="Weinillustration" width={340} height={240}/>
-      </div>
-    </div>
-    <div className="col-span-2 row-span-2 col-start-11 row-start-4">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-center p-5 text-xl lg:text-3xl headingA text-yellow-600">regionale weine</h1>
-          <p className="text-white text-center p-5 text-lg lg:text-[1vw]">Regionale Weine aus dem Markgräflerland und vom Kaiserstuhl  - Hausweingut Firma Heinemann</p>
+      <h1 className="relative top-[5vh] text-center text-[3.2rem] lg:text-[6vw] lg: leading-12 headingA text-yellow-600">
+        gastlichkeit ist unsere philosophie
+      </h1>
+      <section className="mt-12 rounded-xl bg-slate-900 py-20 w-[90vw] flex flex-col items-center justify-center">
+        {/* Gridcontainer Start */}
+        <div className=" bg-slate-800 grid grid-cols-3 md:grid-cols-7 grid-rows-20 md:grid-rows-11 gap-2 md:gap-2 m-4">
+          <div className="col-start-1 row-start-1 col-span-3 md:col-start-1 md:row-start-1 md:col-span-4 md:row-span-2 bg-slate-700 rounded-md p-10">
+            <h1 className="text-center text-2xl text-red-800 font-bold headingA lg:leading-[8vh] lg:text-[10vh]">
+              angebot <br /> und <br /> service
+            </h1>
+          </div>
+          <div className="col-start-1 row-start-2 col-span-3 md:col-start-5 md:row-start-1 md:col-span-3 md:row-span-2 bg-slate-700 rounded-md p-10">
+            <div className="flex flex-col items-center justify-center h-full">
+              <Image
+                src={LogoNeu}
+                alt="Logo Rettungsanker"
+                width={350}
+                height={200}
+                className="object-contain"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-3 col-span-3 md:col-start-1 md:row-start-3 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="lg:transform lg:scale-150 w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center">
+              <Image
+                src={Astra}
+                alt="Astra Bier"
+                width={350}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-4 col-span-3 md:col-start-2 md:row-start-3 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="flex flex-col items-center justify-center h-full">
+              <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+                bier vom Fass
+              </h1>
+              <p className="text-white text-center text-xl mt-4">
+                Flensburger Pils, das Kühle blonde von der Waterkant - Astra
+                dasKultbier natürlich direkt vom Kiez
+              </p>
+            </div>
+          </div>
+          <div className="col-start-1 row-start-5 col-span-3 md:col-start-4 md:row-start-3 md:col-span-3 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
+              <Image
+                src={Wine}
+                alt="Illustration Weinflaschen"
+                width={350}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-6 col-span-3 md:col-start-7 md:row-start-3 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="flex flex-col items-center justify-center h-full">
+              <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+                regionale weine
+              </h1>
+              <p className="text-white text-center text-xl mt-4">
+                Qualitativ hochwertige Weine aus der Region Kaiserstuhl und
+                dem Markgräflerland. Hauslieferant Weingut Heinemann
+                Scherzingen
+              </p>
+            </div>
+          </div>
+          <div className="col-start-1 row-start-7 col-span-3 md:col-start-1 md:row-start-6 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
+              <Image
+                src={Cocktail}
+                alt="Illustration Cocktail"
+                width={350}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-8 col-span-3 md:col-start-2 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+              cocktails & longdrinks
+            </h1>
+            <p className="text-white text-center text-xl mt-4">
+             Zahlreiche internationale Longdrinks und Cocktails - alles was das Herz begehrt. Zahlreiche &quot;Kurze&quot; für jeden Geschmack.
+            </p>
+          </div>
+          <div className="col-start-1 row-start-9 col-span-3 md:col-start-4 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
+              <Image
+                src={Football}
+                alt="Illustration Fussball"
+                width={350}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-10 col-span-3 md:col-start-6 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+              live tv bundesliga
+            </h1>
+            <p className="text-white text-center text-xl mt-4">
+             Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch Spiele der Champions League und natürlich der grossen Turniere von EM und WM. Bei Topspielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !
+            </p>
+          </div>
+          <div className="col-start-1 row-start-11 col-span-3 md:col-start-1 md:row-start-9 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center">
+              <Image
+                src={Crowdparty}
+                alt="Illustration Crowd Party"
+                width={350}
+                height={500}
+                className="mx-auto"
+              />
+            </div>
+          </div>
+          <div className="col-start-1 row-start-12 col-span-3 md:col-start-3 md:row-start-9 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+              Event oder Party?
+            </h1>
+            <p className="text-white text-center text-xl mt-4">
+             Der Rettungsanker ist die ideale Location für Ihren privaten oder Business Event. Im Rahmen einer &quot;geschlossenen Gesellschaft&quot; stehen Ihnen die Räumlichkeiten des Rettungsankers zur Verfügung. Auf Wunsch Catering durch unseren Kooperationspartner möglich ! Sprechen Sie uns an oder kontaktieren Sie uns per e.mail.
+            </p>
+          </div>
+          <div className="col-start-1 row-start-13 col-span-3 md:col-start-5 md:row-start-9 md:col-span-1 md:row-span-2 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
+              <div>
+                <Image
+                  src={HansAlbers}
+                  alt="Illustration Hans Albers"
+                  width={350}
+                  height={500}
+                  className="mx-auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-start-1 row-start-14 col-span-3 md:col-start-6 md:row-start-9 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+            <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
+              hans albers
+            </h1>
+            <p className="text-white text-center text-xl mt-4">
+              Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und Sänger, der als &quot;blonder Hans&quot; Volkssidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören &quot;der Mann, der Sherlock Holmes war&quot; (1937), &quot;Münchhausen&quot; (1943), &quot;die grosse Freiheit Nr.7&quot; (1943) sowie &quot;Auf fer Reeperbahn Nachts um halb eins&quot;
+            </p>
+          </div>
+          {/*<div className="col-start-1 row-start-15 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            14
+          </div>
+          <div className="col-start-1 row-start-16 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            15
+          </div>
+          <div className="col-start-1 row-start-17 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            16
+          </div>
+          <div className="col-start-1 row-start-18 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            17
+          </div>
+          <div className="col-start-1 row-start-19 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            18
+          </div>
+          <div className="col-start-1 row-start-20 col-span-3 md:hidden bg-slate-700 rounded-md p-10">
+            19
+          </div>*/}
         </div>
-      </div>
-    </div>
-    <div className="col-span-2 row-span-3 row-start-6">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src="/Assets/Svg/cocktailglas.svg" alt="Cocktailglas" width={120} height={220}/>
-      </div>
-    </div>
-    <div className="col-span-3 row-span-3 col-start-3 row-start-6">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center">
-          <h1 className="text-center p-5 text-xl lg:text-3xl headingA text-yellow-600">cocktails & longdrinks</h1>
-          <p className="text-white text-center p-5 text-lg lg:text-xl">Eine große Auswahl an Cocktails & Longdrinks - frisch gemixt von unseren Barkeepern</p>
-        </div>
-      </div>
-    </div>
-    <div className="col-span-3 row-span-3 col-start-6 row-start-6">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src="/Assets/Svg/fussball.svg" alt="Fußball" width={120} height={120}/>
-       
-      </div>
-    </div>
-    <div className="col-span-4 row-span-3 col-start-9 row-start-6">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <div className="flex flex-col items-center justify-center">
-       <h1 className="text-center p-5 text-4xl lg:text-4xl headingA text-yellow-600">fussball tv live</h1>
-       <p className="text-white text-center p-5 text-lg lg:text-xl">Alle Spiele live - auf unseren großen Bildschirmen</p>
-      </div>
-      </div>
-    </div>
-    <div className="col-span-5 row-start-9">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src={LogoAlt} alt="Logo Alt" width={1200} height={120}/>
-      </div>
-    </div>
-    <div className="col-span-3 row-span-3 col-start-1 row-start-10">
-      <div className="p-3 bg-slate-800 border h-full w-full rounded-xl flex items-center justify-center">
-        <Image src={Crowdparty} alt="Hero Image" width={320} height={320}/>
-      </div>
-    </div>
-    <div className="p-3 bg-slate-800 border rounded-xl col-span-3 row-span-3 col-start-4 row-start-10">1
-
-
-    </div>
-    <div className="p-3 bg-slate-800 border rounded-xl col-span-3 row-span-3 col-start-7 row-start-9">
-      18
-      <p className="text-white text-center p-5 text-lg lg:text-xl">Alle Bundesliga, Champions League und Europa League Spiele live auf Großbildleinwand und mehreren TV Geräten</p>
-    </div>
-    <div className="p-3 bg-slate-800 border rounded-xl col-span-3 row-span-4 col-start-10 row-start-9">
-      19
-      </div>
-    <div className="p-3 bg-slate-800 border rounded-xl col-span-3 col-start-7 row-start-12">
-      20
-      </div>
-</div>*/
-    
-
-
-
-{/* Bento Grid Container (removed to avoid nested comment syntax causing TS parsing errors) */}
-    {/* Ende Bento Grid Container */}
-</section>
+      </section>
     </>
-
   );
 }

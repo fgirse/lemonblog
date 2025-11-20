@@ -1,62 +1,65 @@
-import React from 'react';
-import Image from 'next/image';
-import MatroseImSeil from '@/public/Assets/Img/matroseimseil.png';
-import LogoAlt from '@/public/Assets/Img/LogoAlt.png';
+import React from "react";
+import Image from "next/image";
+import MatroseImSeil from "@/public/Assets/Img/matroseimseil.png";
+import LogoAlt from "@/public/Assets/Img/LogoAlt.png";
 
 const people = [
   {
-    name: 'Mick',
-    role: 'Captain',
-    imageUrl: '/Assets/Img/portraitmick.png',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "Mick",
+    role: "Captain",
+    imageUrl: "/Assets/Img/portraitmick.png",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
 
   {
-    name: 'Simon',
-    role: 'Obermaat',
-    imageUrl: '/Assets/Img/Matrose.png',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "Simon",
+    role: "Obermaat",
+    imageUrl: "/Assets/Img/Matrose.png",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
 
   {
-    name: 'Anne',
-    role: 'I. Offizierin',
-    imageUrl: '/Assets/Img/Offizier-weiblich.png',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "Anne",
+    role: "I. Offizierin",
+    imageUrl: "/Assets/Img/Offizier-weiblich.png",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
 
   {
-    name: 'Kalim',
-    role: 'Maat',
-    imageUrl: '/Assets/Svg/ankerIcon.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "Kalim",
+    role: "Maat",
+    imageUrl: "/Assets/Svg/ankerIcon.svg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
 
   {
-    name: 'Theo',
-    role: 'Smutje',
-    imageUrl: '/Assets/Svg/ankerIcon.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "Theo",
+    role: "Smutje",
+    imageUrl: "/Assets/Svg/ankerIcon.svg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
 
   {
-    name: 'James',
-    role: 'Funker',
-    imageUrl: '/Assets/Svg/ankerIcon.svg',
-    twitterUrl: '#',
-    linkedinUrl: '#',
+    name: "James",
+    role: "Funker",
+    imageUrl: "/Assets/Svg/ankerIcon.svg",
+    twitterUrl: "#",
+    linkedinUrl: "#",
   },
   // More people...
 ];
 
 export default function Example() {
   return (
-    <section id="section-team" className="relative top-[12vh] w-[86vw] bg-linear-to-b from-[#1A232E] to-[#1A232E] lg:bg-size-[100vw_15vh] lg:bg-center lg:bg-no-repeat">
+    <section
+      id="section-team"
+      className="relative top-[12vh] w-[86vw] bg-linear-to-b from-[#1A232E] to-[#1A232E] lg:bg-size-[100vw_15vh] lg:bg-center lg:bg-no-repeat"
+    >
       <div className="py- mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 lg:py-20">
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">
@@ -65,12 +68,12 @@ export default function Example() {
                 Das Team
               </h2>
               <div className="relative top-[5vh]">
-              <Image 
-                src={MatroseImSeil}
-                width="60"
-                height="auto"
-                alt="Matrose im Seil"
-              />
+                <Image
+                  src={MatroseImSeil}
+                  width="60"
+                  height="auto"
+                  alt="Matrose im Seil"
+                />
               </div>
             </div>
 

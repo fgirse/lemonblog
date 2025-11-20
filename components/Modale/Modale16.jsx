@@ -5,7 +5,7 @@ inside the app. Otherwise you can use the external link of the pdf file*/
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import Tooltip from "../../utils/SimpleTooltip";
-import TabelleBL from"@/components/bundesliga-table.tsx";
+import TabelleBL from "@/components/bundesliga-table.tsx";
 import { useState } from "react";
 import Image from "next/image";
 import LogoDFL from "@/public/Assets/Img/LogoDFL.png";
@@ -77,7 +77,7 @@ export default function Modale16() {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="border-yellow-600 w-full max-w-7xl transform overflow-hidden rounded-2xl border-8 bg-white p-2 text-left align-middle shadow-xl transition-all">
-                  <TabelleBL/>
+                  <TabelleBL />
                   <div className="mt-4">
                     <button
                       type="button"

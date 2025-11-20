@@ -1,5 +1,5 @@
-
 # Lemon's Blog
+
 A simple blog site with CRUD functionalities, made with nextjs 13 , clerk for authentication, MongoDb for database
 
 ### Showcase
@@ -9,14 +9,21 @@ A simple blog site with CRUD functionalities, made with nextjs 13 , clerk for au
 ![Home page](https://github.com/philemon1112/LemonBlog/blob/main/public/Assets/Img/home.png)
 
 #### Blogs page
+
 ![Blogs page](https://github.com/philemon1112/LemonBlog/blob/main/public/Assets/Img/blogs.png)
 
 #### Blogs details page
+
 ![blog details page](https://github.com/philemon1112/LemonBlog/blob/main/public/Assets/Img/blogDetails.png)
+
 #### User Accounts page
+
 ![user accounts](https://github.com/philemon1112/LemonBlog/blob/main/public/Assets/Img/accounts.png)
+
 ## Project Description
+
 This is a simple Blog Application built with nextjs 13. It makes use of nextjs 13 new experimental feature `Server Actions`. This project was built as part of `slightly Techie` application, hope they like it 🥺
+
 ## Project Structure
 
 ```bash
@@ -44,14 +51,16 @@ This is a simple Blog Application built with nextjs 13. It makes use of nextjs 1
 
 ```
 
-[`app/(root)`]("app/(root)")
+[`app/(root)`](<"app/(root)">)
 
 - This contain the main pages route and pages for the application apart from the auth pages , It includes a home page `/`, all blogs page `/blogs` , blog details page `/blogs/[]`, user account page `/account` and authors profile page `/account/[]`, it also consist of the creat `/new`, edit `/edit` and delete pages `/delete` for post
 
-[`app/(auth)`]("app/(auth)")
+[`app/(auth)`](<"app/(auth)">)
+
 - This contains pages which require user authentication it consist of the sign in page `/sign-in`, sign up page `sign-up` and the onboarding screen `/onboarding`
 
-[`app/api`]("app/(api)")
+[`app/api`](<"app/(api)">)
+
 - This contains the uploadthing api , and a custom api to fetch for blog posts
 
 [`public/Assets`]("./public/Assets")
@@ -65,7 +74,6 @@ This is a simple Blog Application built with nextjs 13. It makes use of nextjs 1
 [`lib/`]("lib")
 
 - This is the lib folder of the application it contains the server actions to `(MONGODB)` database in the `actions` route, it also has mongoDb projects Schema's in the `models` and some other files containing utility functions, mongoDB connection and uploadthing react-hooks
-
 
 ## How to setup
 
@@ -89,7 +97,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 Below is the `.env.local` file that is found in the root directory of the project. All this must be provided for the application to function well
 
-``` bash
+```bash
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
 CLERK_SECRET_KEY=
 
@@ -112,11 +120,8 @@ This project makes use of a list of npm packages. They can be installed during t
 
 - `axios` - For making external api calls / request
 
-- `sonner` - For displaying in-app toast notifications 
+- `sonner` - For displaying in-app toast notifications
 
-- `mongoose` -  For enforcing a specific schema at the application layer
+- `mongoose` - For enforcing a specific schema at the application layer
 
 The nextjs project also came with already installed packages such as `next`, `react` and `react-dom`.
-
-
-

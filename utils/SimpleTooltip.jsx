@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const Tooltip = (props) => {
   let timeout;
@@ -27,7 +27,7 @@ const Tooltip = (props) => {
       {/* Wrapping */}
       {props.children}
       {active && (
-        <div className={`Tooltip-Tip ${props.direction || 'top'}`}>
+        <div className={`Tooltip-Tip ${props.direction || "top"}`}>
           {/* Content */}
           {props.content}
         </div>

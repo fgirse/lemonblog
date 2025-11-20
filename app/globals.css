@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -12,15 +10,12 @@
   }
 }
 
-
-
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden !important;
-  height:100dvh;
+  height: 100dvh;
 }
 
 .container {
@@ -68,13 +63,52 @@ input:-webkit-autofill:focus {
   padding-top: 5rem;
 }
 
-
-
-
 h2 {
-        padding-inline: 2rem;
+  padding-inline: 2rem;
   font-weight: bold;
 }
+
+
+/* architects-daughter-regular - latin */
+@font-face {
+  font-family: "Architects Daughter";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.eot")
+      format("embedded-opentype"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff2")
+      format("woff2"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff")
+      format("woff"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.ttf")
+      format("truetype"),
+    url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.svg")
+      format("svg");
+}
+
+/* BowlbyOneSC/-sc-regular - latin */
+@font-face {
+  font-family: "Bowlby One SC";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot")
+      format("embedded-opentype"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff2")
+      format("woff2"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff")
+      format("woff"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.ttf")
+      format("truetype"),
+    url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.svg")
+      format("svg");
+}
+
+
+
+
+
 
 .headingA {
   -webkit-text-stroke-width: 2.33px;
@@ -120,7 +154,6 @@ h2 {
   font-weight: 800;
 }
 
-
 /* Marquee container styles */
 .marquee-container {
   overflow: hidden;
@@ -154,4 +187,45 @@ h2 {
   100% {
     transform: translateX(-100%);
   }
+}
+
+.shape-lighthouse {
+  shape-margin: 80px;
+  float: left;
+  shape-outside: url("/Assets/Img/lighthouse3.png");
+  shape-image-threshold: 0.6;
+}
+
+.portraitMick {
+  shape-margin: 80px;
+  shape-outside: url("/Assets/Img/portraitmick.png");
+  shape-image-threshold: 0.6;
+}
+
+.bg-wohin {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(25, 36, 45, 1),
+      rgba(0, 0, 255, 0),
+      rgba(25, 36, 45, 1)
+    ),
+    url("/Assets/Img/west-side-story.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-sportarena {
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(26, 35, 46, 1),
+      rgba(0, 0, 0, 0),
+      rgba(25, 36, 45, 1)
+    ),
+    url("/Assets/Img/sportarenawc.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 86vw;
 }

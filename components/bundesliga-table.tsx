@@ -1,58 +1,63 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
+import { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Loader2 } from "lucide-react"
-import Image from 'next/image'
+import { Loader2 } from "lucide-react";
+import Image from "next/image";
 
 interface TeamStanding {
-  teamName: string
-  teamIconUrl: string
-  points: number
-  opponentGoals: number
-  goals: number
-  matches: number
-  won: number
-  draw: number
-  lost: number
-  goalDiff: number
+  teamName: string;
+  teamIconUrl: string;
+  points: number;
+  opponentGoals: number;
+  goals: number;
+  matches: number;
+  won: number;
+  draw: number;
+  lost: number;
+  goalDiff: number;
 }
 
 export default function BundesligaTable() {
-  const [standings, setStandings] = useState<TeamStanding[]>([])
-  const [loading, setLoading] = useState(true)
-  const [error, setError] = useState<string | null>(null)
+  const [standings, setStandings] = useState<TeamStanding[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchBundesligaTable = async () => {
       try {
-        setLoading(true)
+        setLoading(true);
         // Using OpenLigaDB API for current Bundesliga season
-        const response = await fetch("https://api.openligadb.de/getbltable/bl1/2025")
+        const response = await fetch(
+          "https://api.openligadb.de/getbltable/bl1/2025",
+        );
 
         if (!response.ok) {
-          throw new Error("Failed to fetch Bundesliga table")
+          throw new Error("Failed to fetch Bundesliga table");
         }
 
-        const data = await response.json()
-        setStandings(data)
+        const data = await response.json();
+        setStandings(data);
       } catch (err) {
-        setError(err instanceof Error ? err.message : "An error occurred")
+        setError(err instanceof Error ? err.message : "An error occurred");
       } finally {
-        setLoading(false)
+        setLoading(false);
       }
-    }
+    };
 
-    fetchBundesligaTable()
-  }, [])
+    fetchBundesligaTable();
+  }, []);
 
   const getPositionColor = (position: number) => {
-    if (position <= 4) return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200"
-    if (position === 5 || position === 6) return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-    if (position >= 16) return "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200"
-    return "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200"
-  }
+    if (position <= 4)
+      return "bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200";
+    if (position === 5 || position === 6)
+      return "bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200";
+    if (position >= 16)
+      return "bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200";
+    return "bg-gray-100 text-gray-800 dark:bg-gray-800 dark:text-gray-200";
+  };
 
   if (loading) {
     return (
@@ -62,7 +67,7 @@ export default function BundesligaTable() {
           <span className="ml-2">Lade Bundesliga Tabelle...</span>
         </CardContent>
       </Card>
-    )
+    );
   }
 
   if (error) {
@@ -74,7 +79,7 @@ export default function BundesligaTable() {
           </div>
         </CardContent>
       </Card>
-    )
+    );
   }
 
   return (
@@ -103,11 +108,17 @@ export default function BundesligaTable() {
             </thead>
             <tbody>
               {standings.map((team, index) => {
-                const position = index + 1
+                const position = index + 1;
                 return (
-                  <tr key={team.teamName} className="border-b hover:bg-muted/50 transition-colors">
+                  <tr
+                    key={team.teamName}
+                    className="border-b hover:bg-muted/50 transition-colors"
+                  >
                     <td className="py-3 px-2">
-                      <Badge variant="secondary" className={getPositionColor(position)}>
+                      <Badge
+                        variant="secondary"
+                        className={getPositionColor(position)}
+                      >
                         {position}
                       </Badge>
                     </td>
@@ -133,7 +144,9 @@ export default function BundesligaTable() {
                     <td className="text-center py-3 px-2">
                       <span
                         className={
-                          team.goalDiff >= 0 ? "text-green-600 dark:text-green-400" : "text-red-600 dark:text-red-400"
+                          team.goalDiff >= 0
+                            ? "text-green-600 dark:text-green-400"
+                            : "text-red-600 dark:text-red-400"
                         }
                       >
                         {team.goalDiff > 0 ? "+" : ""}
@@ -144,7 +157,7 @@ export default function BundesligaTable() {
                       <span className="font-bold">{team.points}</span>
                     </td>
                   </tr>
-                )
+                );
               })}
             </tbody>
           </table>
@@ -152,19 +165,25 @@ export default function BundesligaTable() {
 
         <div className="mt-6 flex flex-wrap gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <Badge className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">1-4</Badge>
+            <Badge className="bg-green-100 text-green-800 dark:bg-green-900 dark:text-green-200">
+              1-4
+            </Badge>
             <span>Champions League</span>
           </div>
           <div className="flex items-center gap-2">
-            <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">5-6</Badge>
+            <Badge className="bg-blue-100 text-blue-800 dark:bg-blue-900 dark:text-blue-200">
+              5-6
+            </Badge>
             <span>Europa League</span>
           </div>
           <div className="flex items-center gap-2">
-            <Badge className="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200">16-18</Badge>
+            <Badge className="bg-red-100 text-red-800 dark:bg-red-900 dark:text-red-200">
+              16-18
+            </Badge>
             <span>Abstieg</span>
           </div>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }

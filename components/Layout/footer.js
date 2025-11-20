@@ -1,14 +1,13 @@
-"use client"
-import React from 'react'
-import Link from 'next/link'
-import Image from 'next/image';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
-  
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth',
+      behavior: "smooth",
     });
   };
 
@@ -16,10 +15,8 @@ const Footer = () => {
   const year = currentDate.getFullYear();
 
   return (
-    <footer className="bg-black">
-      <div
-        className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24"
-      >
+    <footer className="bg-yellow-900">
+      <div className="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
         <div className="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
           <div
             onClick={scrollToTop}
@@ -45,39 +42,53 @@ const Footer = () => {
         <div className="lg:flex lg:items-end lg:justify-between">
           <div>
             <div className="flex justify-center text-[#FFF44F] lg:justify-start">
-              <Image src="/Assets/Img/LogoAlt.png" alt="Rettungsanker Logo" width={150} height={150} />
+              <Image
+                src="/Assets/Img/LogoAlt.png"
+                alt="Rettungsanker Logo"
+                width={150}
+                height={150}
+              />
             </div>
 
-            <p
-              className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left"
-            >
-              Rettungsanker Blog || Discover inspiring stories, helpful tips, and thought-provoking ideas from a variety of topics.
+            <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
+              Rettungsanker Blog || Discover inspiring stories, helpful tips,
+              and thought-provoking ideas from a variety of topics.
             </p>
           </div>
 
-          <ul
-            className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
-          >
+          <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
             <li>
-              <Link className="text-gray-200 transition hover:text-white" href={"/"}>
+              <Link
+                className="text-gray-200 transition hover:text-white"
+                href={"/"}
+              >
                 Home
               </Link>
             </li>
 
             <li>
-              <Link className="text-gray-200 transition hover:text-white" href={"/about"}>
+              <Link
+                className="text-gray-200 transition hover:text-white"
+                href={"/about"}
+              >
                 über uns
               </Link>
             </li>
 
             <li>
-              <Link className="text-gray-200 transition hover:text-white" href={"/blogs"}>
+              <Link
+                className="text-gray-200 transition hover:text-white"
+                href={"/blogs"}
+              >
                 Blogs
               </Link>
             </li>
 
             <li>
-              <Link className="text-gray-200 transition hover:text-white" href="/accounts">
+              <Link
+                className="text-gray-200 transition hover:text-white"
+                href="/accounts"
+              >
                 Mein Konto
               </Link>
             </li>
@@ -85,11 +96,16 @@ const Footer = () => {
         </div>
 
         <p className="mt-12 text-center text-sm text-gray-400 lg:text-right">
-          Copyright &copy; {year}. All rights reserved by <span className= "font-bowlby text-green-600"> Medicus Design Basel</span> 🇨🇭
+          Copyright &copy; {year}. All rights reserved by{" "}
+          <span className="font-bowlby text-green-600">
+            {" "}
+            Medicus Design Basel
+          </span>{" "}
+          🇨🇭
         </p>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
