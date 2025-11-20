@@ -84,9 +84,8 @@ export default function Bento() {
                 regionale weine
               </h1>
               <p className="text-white text-center text-xl mt-4">
-                Qualitativ hochwertige Weine aus der Region Kaiserstuhl und
-                dem Markgräflerland. Hauslieferant Weingut Heinemann
-                Scherzingen
+                Qualitativ hochwertige Weine aus der Region Kaiserstuhl und dem
+                Markgräflerland. Hauslieferant Weingut Heinemann Scherzingen
               </p>
             </div>
           </div>
@@ -106,7 +105,8 @@ export default function Bento() {
               cocktails & longdrinks
             </h1>
             <p className="text-white text-center text-xl mt-4">
-             Zahlreiche internationale Longdrinks und Cocktails - alles was das Herz begehrt. Zahlreiche &quot;Kurze&quot; für jeden Geschmack.
+              Zahlreiche internationale Longdrinks und Cocktails - alles was das
+              Herz begehrt. Zahlreiche &quot;Kurze&quot; für jeden Geschmack.
             </p>
           </div>
           <div className="col-start-1 row-start-9 col-span-3 md:col-start-4 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
@@ -125,7 +125,13 @@ export default function Bento() {
               live tv bundesliga
             </h1>
             <p className="text-white text-center text-xl mt-4">
-             Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV Event in unserer Sportarena natürlich mit Schwerpunkt unseres SC Freiburgs. Wann immer möglich auch Spiele der Champions League und natürlich der grossen Turniere von EM und WM. Bei Topspielen des SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen über unser Booking-Tool zu empfehlen - Unten folgender Button und Du bist direkt dabei !
+              Jeden Samstag-Spieltag der laufenden Bundesliga-Saison Live TV
+              Event in unserer Sportarena natürlich mit Schwerpunkt unseres SC
+              Freiburgs. Wann immer möglich auch Spiele der Champions League und
+              natürlich der grossen Turniere von EM und WM. Bei Topspielen des
+              SC Freiburg mit grosser Publikumsnachfrage sind Reservierungen
+              über unser Booking-Tool zu empfehlen - Unten folgender Button und
+              Du bist direkt dabei !
             </p>
           </div>
           <div className="col-start-1 row-start-11 col-span-3 md:col-start-1 md:row-start-9 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
@@ -144,7 +150,12 @@ export default function Bento() {
               Event oder Party?
             </h1>
             <p className="text-white text-center text-xl mt-4">
-             Der Rettungsanker ist die ideale Location für Ihren privaten oder Business Event. Im Rahmen einer &quot;geschlossenen Gesellschaft&quot; stehen Ihnen die Räumlichkeiten des Rettungsankers zur Verfügung. Auf Wunsch Catering durch unseren Kooperationspartner möglich ! Sprechen Sie uns an oder kontaktieren Sie uns per e.mail.
+              Der Rettungsanker ist die ideale Location für Ihren privaten oder
+              Business Event. Im Rahmen einer &quot;geschlossenen
+              Gesellschaft&quot; stehen Ihnen die Räumlichkeiten des
+              Rettungsankers zur Verfügung. Auf Wunsch Catering durch unseren
+              Kooperationspartner möglich ! Sprechen Sie uns an oder
+              kontaktieren Sie uns per e.mail.
             </p>
           </div>
           <div className="col-start-1 row-start-13 col-span-3 md:col-start-5 md:row-start-9 md:col-span-1 md:row-span-2 bg-slate-700 rounded-md p-10">
@@ -165,7 +176,14 @@ export default function Bento() {
               hans albers
             </h1>
             <p className="text-white text-center text-xl mt-4">
-              Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24. Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und Sänger, der als &quot;blonder Hans&quot; Volkssidol wurde. Zu den bekanntesten Spielfilmen in denen er mitwirkte gehören &quot;der Mann, der Sherlock Holmes war&quot; (1937), &quot;Münchhausen&quot; (1943), &quot;die grosse Freiheit Nr.7&quot; (1943) sowie &quot;Auf fer Reeperbahn Nachts um halb eins&quot;
+              Hans Phillip August Albers (* 22.September 1891 in Hamburg , 24.
+              Juli 1960 in Berg, Bayern) war ein deutscher Schauspieler und
+              Sänger, der als &quot;blonder Hans&quot; Volkssidol wurde. Zu den
+              bekanntesten Spielfilmen in denen er mitwirkte gehören &quot;der
+              Mann, der Sherlock Holmes war&quot; (1937),
+              &quot;Münchhausen&quot; (1943), &quot;die grosse Freiheit
+              Nr.7&quot; (1943) sowie &quot;Auf fer Reeperbahn Nachts um halb
+              eins&quot;
             </p>
           </div>
           {/*<div className="col-start-1 row-start-15 col-span-3 md:hidden bg-slate-700 rounded-md p-10">

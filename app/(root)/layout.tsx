@@ -36,10 +36,10 @@ export default function RootLayout({
         lang="en"
         className={`${bowlbyOne.variable} ${architectsDaughter.variable}`}
       >
-        <body>
+        <body className="">
           <Header />
           <InfoBar />
-          <main className="bg-yellow-900">
+          <main className="">
             <Suspense fallback={<Loading />}>{children}</Suspense>
           </main>
           <Footer />

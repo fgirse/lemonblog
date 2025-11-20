@@ -11,7 +11,10 @@
 }
 
 body {
-  background: var(--background);
+  background-image: url(/Assets/Img/anchors.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat; 
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden !important;
@@ -68,13 +71,13 @@ h2 {
   font-weight: bold;
 }
 
-
 /* architects-daughter-regular - latin */
 @font-face {
   font-family: "Architects Daughter";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
+  src:
+    local(""),
     url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.eot")
       format("embedded-opentype"),
     url("../public/fonts/ArchitectsDaughter/architects-daughter-v17-latin-regular.woff2")
@@ -92,7 +95,8 @@ h2 {
   font-family: "Bowlby One SC";
   font-style: normal;
   font-weight: 400;
-  src: local(""),
+  src:
+    local(""),
     url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.eot")
       format("embedded-opentype"),
     url("../public/fonts/BowlbyOneSC/bowlby-one-sc-v19-latin-regular.woff2")
@@ -105,18 +109,13 @@ h2 {
       format("svg");
 }
 
-
-
-
-
-
 .headingA {
   -webkit-text-stroke-width: 2.33px;
   -webkit-text-stroke-color: #ffffff;
   font-family: "Bowlby One SC";
 }
 .headingG {
-  -webkit-text-stroke-width: 0.33px;
+  -webkit-text-stroke-width: 0.53px;
   -webkit-text-stroke-color: #ffffff;
   font-family: "Bowlby One SC";
 }

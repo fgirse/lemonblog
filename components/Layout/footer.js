@@ -45,21 +45,21 @@ const Footer = () => {
               <Image
                 src="/Assets/Img/LogoAlt.png"
                 alt="Rettungsanker Logo"
-                width={150}
+                width={250}
                 height={150}
               />
             </div>
 
             <p className="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-100 lg:text-left">
-              Rettungsanker Blog || Discover inspiring stories, helpful tips,
-              and thought-provoking ideas from a variety of topics.
+              Rettungsanker Blog || Entdecke inspirierende Geschichten,
+              und anregende Ideen zu einer Vielzahl von Themen.
             </p>
           </div>
 
           <ul className="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12">
             <li>
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-gray-200 text-xl p-1 transition hover:border hover:rounded-xl"
                 href={"/"}
               >
                 Home
@@ -68,7 +68,7 @@ const Footer = () => {
 
             <li>
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-gray-200 text-xl p-1 transition hover:border hover:rounded-xl"
                 href={"/about"}
               >
                 über uns
@@ -77,7 +77,7 @@ const Footer = () => {
 
             <li>
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-gray-200 text-xl p-1 transition hover:border hover:rounded-xl"
                 href={"/blogs"}
               >
                 Blogs
@@ -86,7 +86,7 @@ const Footer = () => {
 
             <li>
               <Link
-                className="text-gray-200 transition hover:text-white"
+                className="text-gray-200 text-xl p-1 transition hover:border hover:rounded-xl"
                 href="/accounts"
               >
                 Mein Konto
@@ -95,9 +95,9 @@ const Footer = () => {
           </ul>
         </div>
 
-        <p className="mt-12 text-center text-sm text-gray-400 lg:text-right">
+        <p className="mt-12 text-center text-sm font-bowlby text-gray-100 lg:text-right">
           Copyright &copy; {year}. All rights reserved by{" "}
-          <span className="font-bowlby text-green-600">
+          <span className="text-xl font-bowlby headingG text-gray-900">
             {" "}
             Medicus Design Basel
           </span>{" "}
