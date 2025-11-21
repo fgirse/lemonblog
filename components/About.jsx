@@ -105,7 +105,7 @@ const About = () => (
       <p className="text-yellow-500 text-center">scrolling down</p>
       <motion.img
         variants={fadeIn("up", "tween", 0.3, 1)}
-        src="/arrow-down.svg"
+        src="/Assets/Svg/arrow-down.svg"
         alt="arrow-down"
         className="w-[18px] h-7 object-contain mt-7"
       ></motion.img>

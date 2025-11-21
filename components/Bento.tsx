@@ -45,7 +45,7 @@ export default function Bento() {
               />
             </div>
           </div>
-          <div className="col-start-1 row-start-3 col-span-3 md:col-start-1 md:row-start-3 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
+          <div className="col-start-1 row-start-3 col-span-3 md:col-start-1 md:row-start-3 md:col-span-1 md:row-span-3 bg-red-900/70 rounded-md p-10">
             <div className="lg:transform lg:scale-150 w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center">
               <Image
                 src={Astra}
@@ -56,7 +56,7 @@ export default function Bento() {
               />
             </div>
           </div>
-          <div className="col-start-1 row-start-4 col-span-3 md:col-start-2 md:row-start-3 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+          <div className="col-start-1 row-start-4 col-span-3 md:col-start-2 md:row-start-3 md:col-span-2 md:row-span-3 bg-red-900/70 rounded-md p-10">
             <div className="flex flex-col items-center justify-center h-full">
               <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
                 bier vom Fass
@@ -67,8 +67,8 @@ export default function Bento() {
               </p>
             </div>
           </div>
-          <div className="col-start-1 row-start-5 col-span-3 md:col-start-4 md:row-start-3 md:col-span-3 md:row-span-3 bg-slate-700 rounded-md p-10">
-            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
+          <div className="col-start-1 row-start-5 col-span-3 md:col-start-4 md:row-start-3 md:col-span-2 md:row-span-2 bg-slate-700 rounded-md p-10">
+            <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-110">
               <Image
                 src={Wine}
                 alt="Illustration Weinflaschen"
@@ -78,7 +78,7 @@ export default function Bento() {
               />
             </div>
           </div>
-          <div className="col-start-1 row-start-6 col-span-3 md:col-start-7 md:row-start-3 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
+          <div className="col-start-1 row-start-6 col-span-3 md:col-start-6 md:row-start-3 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
             <div className="flex flex-col items-center justify-center h-full">
               <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
                 regionale weine
@@ -92,10 +92,10 @@ export default function Bento() {
           <div className="col-start-1 row-start-7 col-span-3 md:col-start-1 md:row-start-6 md:col-span-1 md:row-span-3 bg-slate-700 rounded-md p-10">
             <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
               <Image
-                src={Cocktail}
+                src="/Assets/Svg/Cocktailglas.svg"
                 alt="Illustration Cocktail"
-                width={350}
-                height={500}
+                width={100}
+                height={100}
                 className="mx-auto"
               />
             </div>
@@ -109,18 +109,18 @@ export default function Bento() {
               Herz begehrt. Zahlreiche &quot;Kurze&quot; für jeden Geschmack.
             </p>
           </div>
-          <div className="col-start-1 row-start-9 col-span-3 md:col-start-4 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+          <div className="col-start-1 row-start-9 col-span-3 md:col-start-4 md:row-start-6 md:col-span-2 md:row-span-3 bg-red-900/70 rounded-md p-10">
             <div className="w-full h-full lg:flex lg:flex-col lg:items-center lg:justify-center lg:transform lg:scale-150">
               <Image
-                src={Football}
+                src="/Assets/Svg/Fussball.svg"
                 alt="Illustration Fussball"
-                width={350}
-                height={500}
+                width={200}
+                height={200}
                 className="mx-auto"
               />
             </div>
           </div>
-          <div className="col-start-1 row-start-10 col-span-3 md:col-start-6 md:row-start-6 md:col-span-2 md:row-span-3 bg-slate-700 rounded-md p-10">
+          <div className="col-start-1 row-start-10 col-span-3 md:col-start-6 md:row-start-6 md:col-span-2 md:row-span-3 bg-red-900/70 rounded-md p-10">
             <h1 className="headingA text-center text-3xl text-yellow-600 lg:text-4xl">
               live tv bundesliga
             </h1>

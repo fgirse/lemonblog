@@ -12,7 +12,7 @@ import Image from "next/image";
 const SportArena = () => (
   <section
     id="section-sportarena"
-    className={`${styles.paddings} relative z-10 bg-sportarena flex flex-col justify-beetween top-20`}
+    className={`${styles.paddings} relative w-[100vw] z-10 bg-sportarena flex flex-col justify-beetween top-20`}
   >
     <motion.div
       variants={staggerContainer}
@@ -26,7 +26,7 @@ const SportArena = () => (
         className="flex-1 flex justify-center flex-col"
       >
         <TypingText title="| Sportarena" />
-        <h1 className="text-center headingA text-yellow-500 text-[2.33rem] lg:text-9xl">
+        <h1 className=" headingA text-yellow-500 text-[2.33rem] lg:text-9xl">
           Sportarena
         </h1>
         <div className="mt-12 flex flex-wrap items-center justify-between md:flex md:flex-row gap-6">
