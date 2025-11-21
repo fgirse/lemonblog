@@ -4,6 +4,7 @@ import React from "react";
 import { fetchUser, fetchUserPosts } from "@/lib/actions/user.actions";
 import Image from "next/image";
 import HomeBlogCard from "@/components/Cards/HomeBlogCard";
+import Image from"next/image";
 
 async function page({ params }) {
   const user = await currentUser();
@@ -25,7 +26,7 @@ async function page({ params }) {
               height={112}
               className="w-32 mx-auto group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
             />
-            {/* <img className="object-cover w-32 h-32 mx-auto rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/4/avatar.jpg" alt="" /> */}
+            <Image className="object-cover w-32 h-32 mx-auto rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/4/avatar.jpg" alt="" /> 
             <p className="mt-6 text-lg font-semibold text-white">
               {userInfo?.name},{" "}
               <span className="font-normal text-gray-600">

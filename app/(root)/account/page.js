@@ -17,7 +17,7 @@ async function page() {
   if (!userInfo?.onboarded) redirect("/onboarding");
 
   return (
-    <div className="mx-auto max-w-screen-lg md:px-4 px-2">
+    <div className="bg-red-5mx-auto max-w-screen-lg md:px-4 px-2">
       <section className="py-4 sm:py-10 lg:pt-14">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
