@@ -45,7 +45,7 @@ const About = () => (
           />
         </div>
 
-        <p className="mt-5 text-[1.33rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]">
+        <p className="-mt-12 text-[1.33rem] text-gray-300 md:text-[1.33rem] lg:text-[1.66rem]">
           {" "}
           In Hommage an eine typische Kiez-Kneipe auf St.Pauli, haben wir im
           Herzen von Freiburg ein Lokal eröffnet, welches es so südlich der Elbe

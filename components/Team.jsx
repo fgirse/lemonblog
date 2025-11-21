@@ -58,13 +58,13 @@ export default function Example() {
   return (
     <section
       id="section-team"
-      className="relative top-[12vh] w-[86vw] bg-linear-to-b from-[#1A232E] to-[#1A232E] lg:bg-size-[100vw_15vh] lg:bg-center lg:bg-no-repeat"
+      className="relative mb-44 top-[12vh] w-[86vw] bg-linear-to-b from-[#1A232E] to-[#1A232E] lg:bg-size-[100vw_15vh] lg:bg-center lg:bg-no-repeat"
     >
       <div className="py- mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8 lg:py-20">
         <div className="space-y-5 sm:space-y-1">
           <div className="space-y-3 sm:mx-auto sm:max-w-xl lg:max-w-5xl">
             <div className=" flex flex-row items-start justify-center gap-x-5">
-              <h2 className="relative top-[5vh] text-center headingA text-6xl font-extrabold tracking-tight text-yellow-600 sm:text-7xl 2xl:text-6xl">
+              <h2 className="relative top-[1vh] text-center headingA text-6xl font-extrabold tracking-tight text-yellow-600 sm:text-7xl 2xl:text-6xl">
                 Das Team
               </h2>
               <div className="relative top-[5vh]">

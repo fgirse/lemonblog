@@ -26,11 +26,11 @@ export default function Bento() {
       <h1 className="relative top-[5vh] text-center text-[3.2rem] lg:text-[6vw] lg: leading-12 headingA text-yellow-600">
         gastlichkeit ist unsere philosophie
       </h1>
-      <section className="mt-12 rounded-xl bg-slate-900 py-20 w-[90vw] flex flex-col items-center justify-center">
+      <section className="mt-12 rounded-xl py-20 w-[90vw] flex flex-col items-center justify-center">
         {/* Gridcontainer Start */}
         <div className=" bg-slate-800 grid grid-cols-3 md:grid-cols-7 grid-rows-20 md:grid-rows-11 gap-2 md:gap-2 m-4">
           <div className="col-start-1 row-start-1 col-span-3 md:col-start-1 md:row-start-1 md:col-span-4 md:row-span-2 bg-slate-700 rounded-md p-10">
-            <h1 className="text-center text-2xl text-red-800 font-bold headingA lg:leading-[8vh] lg:text-[10vh]">
+            <h1 className="text-center text-5xl text-gray-800 font-bold headingA lg:leading-[8vh] lg:text-[10vh]">
               angebot <br /> und <br /> service
             </h1>
           </div>
