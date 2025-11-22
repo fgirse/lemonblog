@@ -17,7 +17,7 @@ async function page() {
   if (!userInfo?.onboarded) redirect("/onboarding");
 
   return (
-    <div className="bg-slate-900 mx-auto max-w-screen-5xl md:px-4 px-2">
+    <div className="bg-slate-900 mx-auto max-w-screen-7xl md:px-4 px-2">
       <section className="py-4 sm:py-10 lg:pt-14">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
@@ -28,9 +28,9 @@ async function page() {
               height={112}
               className="w-32 mx-auto group-hover:w-36 group-hover:h-36 h-32 object-center object-cover rounded-full transition-all duration-500 delay-500 transform"
             />
-            <p className="mt-6 text-lg font-semibold text-white">
-              {user?.firstName} {user?.lastName}{" "}
-              <span className="font-normal text-gray-500">
+            <p className="mt-6 text-l font-semibold text-white text2xl">
+              {user?.firstName} {user?.lastName}{"    "}
+              <span className="font-normal border text-gray-500">
                 {userInfo?.username}
               </span>
             </p>

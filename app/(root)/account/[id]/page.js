@@ -4,7 +4,6 @@ import React from "react";
 import { fetchUser, fetchUserPosts } from "@/lib/actions/user.actions";
 import Image from "next/image";
 import HomeBlogCard from "@/components/Cards/HomeBlogCard";
-import Image from"next/image";
 
 async function page({ params }) {
   const user = await currentUser();
@@ -68,7 +67,7 @@ async function page({ params }) {
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               />
             </svg>
-            Chat with us
+            Chat mit uns
           </button>
           <p className="mt-4 flex items-center whitespace-nowrap text-gray-200 sm:justify-end">
             <svg
@@ -86,7 +85,7 @@ async function page({ params }) {
 
       <div className="mb-2 mt-20 md:mb-10">
         <h2 className="mb-8 text-xl font-semibold text-gray-200 md:mb-6 lg:text-2xl">
-          Users Post
+          Benutzerbeiträge
         </h2>
       </div>
 
