@@ -170,7 +170,7 @@ const Header = () => {
               <UserButton />
             </div>
 
-            <div className="fixed lg:hidden bottom-0 left-0 z-50 rounded-tl-2xl rounded-tr-2xl w-full border-t b bg-gray-900 border-gray-800">
+            <div className="fixed lg:hidden bottom-0 left-0 z-50 rounded-tl-2xl rounded-tr-2xl w-full border-t b bg-red-900 border-gray-800">
               <div className="grid h-full max-w-lg grid-cols-4 mx-auto font-medium ">
                 <Link href="/">
                   <button
