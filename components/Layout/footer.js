@@ -87,7 +87,7 @@ const Footer = () => {
             <li>
               <Link
                 className="text-gray-200 text-xl p-1 transition hover:border hover:rounded-xl"
-                href={"/accounts"}
+                href={"/account"}
               >
                 Mein Konto
               </Link>

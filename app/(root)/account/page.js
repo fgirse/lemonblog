@@ -17,7 +17,7 @@ async function page() {
   if (!userInfo?.onboarded) redirect("/onboarding");
 
   return (
-    <div className="bg-red-5mx-auto max-w-screen-lg md:px-4 px-2">
+    <div className="bg-slate-900 mx-auto max-w-screen-5xl md:px-4 px-2">
       <section className="py-4 sm:py-10 lg:pt-14">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="text-center">
@@ -41,7 +41,7 @@ async function page() {
       <div className="mt-6 mb-8 flex flex-col items-start justify-center space-y-4 py-8 px-4 sm:flex-row sm:space-y-0 md:justify-between lg:px-0">
         <div className="max-w-lg">
           <h1 className="text-2xl font-bold text-gray-100">
-            Welcome to your Dashboard
+            Willkommen zu ihrem Infoboard
           </h1>
           <p className="mt-2 text-gray-200">{userInfo?.bio}</p>
         </div>
@@ -61,7 +61,7 @@ async function page() {
                 d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"
               />
             </svg>
-            Chat with us
+            Chat mit uns
           </button>
           <p className="mt-4 flex items-center whitespace-nowrap text-gray-200 sm:justify-end">
             <svg
